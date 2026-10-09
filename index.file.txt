@@ -1,0 +1,1757 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#17120f">
+
+<title>Tapasya Spa & Salon | Premium Salon in Jodhpur</title>
+
+<meta name="description" content="Discover Tapasya Spa & Salon in Ratanada, Jodhpur. Explore hair styling, facials, spa treatments and beauty services. Contact us on WhatsApp to book your appointment.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --bg: #f8f5ef;
+  --dark: #17120f;
+  --brown: #60452f;
+  --gold: #c4a16a;
+  --cream: #eae0d0;
+  --muted: #77716b;
+  --white: #fff;
+  --radius: 18px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 90px;
+}
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  background: var(--bg);
+  color: var(--dark);
+  line-height: 1.7;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button, input, select, textarea {
+  font: inherit;
+}
+
+button, a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.container {
+  width: min(1160px, 90%);
+  margin: auto;
+}
+
+.section {
+  padding: 95px 0;
+}
+
+.eyebrow {
+  color: var(--brown);
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 11px;
+  font-weight: 700;
+  margin-bottom: 14px;
+}
+
+.section-title {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(34px, 5vw, 53px);
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.section-description {
+  color: var(--muted);
+  max-width: 600px;
+  margin-top: 16px;
+}
+
+.section-heading {
+  margin-bottom: 45px;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 14px 23px;
+  border: 1px solid var(--gold);
+  background: var(--gold);
+  color: #17120f;
+  font-size: 13px;
+  font-weight: 700;
+  transition: .25s ease;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: var(--dark);
+  border-color: var(--dark);
+  color: white;
+  transform: translateY(-2px);
+}
+
+.btn-outline {
+  background: transparent;
+  border-color: rgba(255,255,255,.6);
+  color: white;
+}
+
+.btn-outline:hover {
+  background: white;
+  color: var(--dark);
+  border-color: white;
+}
+
+.topbar {
+  background: var(--dark);
+  color: #eee5d9;
+  padding: 8px 0;
+  font-size: 11px;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: rgba(248,245,239,.96);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid #e7ded2;
+}
+
+.nav {
+  height: 82px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 25px;
+}
+
+.logo {
+  font-family: 'Playfair Display', serif;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.15;
+}
+
+.logo small {
+  display: block;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 9px;
+  font-weight: 500;
+  letter-spacing: 3px;
+  margin-top: 6px;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 27px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.nav-links a:not(.btn):hover {
+  color: var(--brown);
+}
+
+.nav .btn {
+  padding: 11px 17px;
+}
+
+.menu-toggle {
+  display: none;
+  background: none;
+  border: 0;
+  font-size: 26px;
+  cursor: pointer;
+}
+
+.hero {
+  min-height: 690px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  isolation: isolate;
+  color: white;
+  background: #30241c;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+  background:
+    linear-gradient(90deg, rgba(20,15,12,.87) 0%, rgba(20,15,12,.55) 52%, rgba(20,15,12,.1) 100%),
+    url('https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=2000&q=85')
+    center 45% / cover no-repeat;
+}
+
+.hero-content {
+  padding: 100px 0;
+  max-width: 700px;
+}
+
+.hero .eyebrow {
+  color: #e2c79b;
+}
+
+.hero h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(48px, 7.5vw, 86px);
+  line-height: 1.08;
+  font-weight: 500;
+  letter-spacing: -1px;
+}
+
+.hero h1 em {
+  color: #d7b985;
+  font-weight: 400;
+}
+
+.hero p {
+  color: #e6ddd4;
+  max-width: 510px;
+  margin: 23px 0 30px;
+  font-size: 15px;
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 13px;
+}
+
+.hero-note {
+  display: flex;
+  gap: 28px;
+  margin-top: 43px;
+  color: #e5d8c9;
+  font-size: 12px;
+}
+
+.hero-note span::before {
+  content: "✦";
+  color: var(--gold);
+  margin-right: 8px;
+}
+
+.trust-strip {
+  background: var(--dark);
+  color: white;
+  padding: 28px 0;
+}
+
+.trust-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  text-align: center;
+  gap: 20px;
+}
+
+.trust-item {
+  border-right: 1px solid #45372d;
+}
+
+.trust-item:last-child {
+  border: 0;
+}
+
+.trust-item strong {
+  display: block;
+  font-family: 'Playfair Display', serif;
+  font-size: 28px;
+  color: #d9bb88;
+  font-weight: 500;
+}
+
+.trust-item span {
+  font-size: 11px;
+  color: #d6cbc0;
+  letter-spacing: 1px;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 75px;
+  align-items: center;
+}
+
+.about-image {
+  position: relative;
+  padding: 0 28px 28px 0;
+}
+
+.about-image img {
+  width: 100%;
+  height: 520px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.image-caption {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 185px;
+  padding: 22px;
+  background: var(--gold);
+  color: var(--dark);
+  font-family: 'Playfair Display', serif;
+  font-size: 19px;
+  line-height: 1.35;
+}
+
+.about-copy p {
+  color: var(--muted);
+  margin-top: 20px;
+}
+
+.about-points {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  margin: 28px 0;
+}
+
+.about-point {
+  border-top: 1px solid #ded4c7;
+  padding-top: 13px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.about-point span {
+  color: var(--gold);
+  margin-right: 8px;
+}
+
+.services {
+  background: #eee7dc;
+}
+
+.center {
+  text-align: center;
+}
+
+.center .section-description {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+
+.service-card {
+  background: var(--bg);
+  padding: 30px;
+  border: 1px solid #e6dccc;
+  transition: .3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 35px rgba(39,27,16,.08);
+}
+
+.service-number {
+  color: var(--gold);
+  font-family: 'Playfair Display', serif;
+  font-size: 31px;
+}
+
+.service-card h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 25px;
+  font-weight: 500;
+  margin: 13px 0 9px;
+}
+
+.service-card p {
+  color: var(--muted);
+  font-size: 13px;
+  min-height: 68px;
+}
+
+.text-link {
+  display: inline-block;
+  margin-top: 18px;
+  font-size: 12px;
+  font-weight: 700;
+  border-bottom: 1px solid var(--gold);
+  padding-bottom: 4px;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr 1fr;
+  grid-template-rows: 240px 240px;
+  gap: 14px;
+}
+
+.gallery-grid a {
+  overflow: hidden;
+  background: #e1d7c9;
+}
+
+.gallery-grid a:first-child {
+  grid-row: span 2;
+}
+
+.gallery-grid img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform .5s;
+}
+
+.gallery-grid a:hover img {
+  transform: scale(1.06);
+}
+
+.gallery-note {
+  color: var(--muted);
+  font-size: 11px;
+  margin-top: 15px;
+}
+
+.review-section {
+  background: var(--dark);
+  color: white;
+}
+
+.review-section .eyebrow {
+  color: #d8b983;
+}
+
+.review-section .section-description {
+  color: #c6b9ab;
+}
+
+.review-summary {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 22px;
+  margin-bottom: 35px;
+  padding: 24px 0;
+  border-top: 1px solid #4c3c30;
+  border-bottom: 1px solid #4c3c30;
+}
+
+.review-score {
+  font-family: 'Playfair Display', serif;
+  font-size: 52px;
+  line-height: 1;
+  color: #dfbf89;
+}
+
+.stars {
+  color: #e1bd7d;
+  letter-spacing: 3px;
+}
+
+.review-summary small {
+  display: block;
+  color: #c7b9ab;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.reviews-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.review-card {
+  border: 1px solid #44372e;
+  padding: 27px;
+  background: #201914;
+}
+
+.review-card .stars {
+  font-size: 13px;
+}
+
+.review-card p {
+  color: #e0d6cc;
+  font-size: 13px;
+  margin: 17px 0 22px;
+}
+
+.review-card strong {
+  font-size: 12px;
+}
+
+.review-card small {
+  display: block;
+  color: #b4a79a;
+  font-size: 10px;
+}
+
+.review-disclaimer {
+  color: #b9aa9a;
+  font-size: 11px;
+  margin-top: 20px;
+}
+
+.booking-grid {
+  display: grid;
+  grid-template-columns: .85fr 1.15fr;
+  gap: 65px;
+  align-items: start;
+}
+
+.booking-info p {
+  color: var(--muted);
+  margin-top: 18px;
+}
+
+.contact-item {
+  margin-top: 25px;
+  padding-top: 17px;
+  border-top: 1px solid #e0d7cb;
+}
+
+.contact-item small {
+  display: block;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 10px;
+  color: var(--brown);
+  font-weight: 700;
+}
+
+.contact-item strong {
+  display: block;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.booking-form {
+  background: white;
+  padding: 35px;
+  box-shadow: 0 12px 40px rgba(40,30,20,.06);
+}
+
+.booking-form h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 29px;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.form-description {
+  color: var(--muted);
+  font-size: 12px;
+  margin-bottom: 23px;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+.field {
+  margin-bottom: 17px;
+}
+
+.field label {
+  display: block;
+  font-size: 11px;
+  font-weight: 700;
+  margin-bottom: 7px;
+}
+
+.field input,
+.field select,
+.field textarea {
+  width: 100%;
+  border: 1px solid #ded8cf;
+  padding: 13px;
+  background: #fcfbf8;
+  color: var(--dark);
+  outline: none;
+  border-radius: 0;
+}
+
+.field input:focus,
+.field select:focus,
+.field textarea:focus {
+  border-color: var(--gold);
+}
+
+.field textarea {
+  min-height: 90px;
+  resize: vertical;
+}
+
+.booking-form .btn {
+  width: 100%;
+}
+
+.form-message {
+  margin-top: 12px;
+  font-size: 11px;
+  color: var(--muted);
+}
+
+.location {
+  background: #eee7dc;
+}
+
+.location-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+}
+
+.map-frame {
+  width: 100%;
+  height: 380px;
+  border: 0;
+}
+
+.location-card {
+  background: var(--bg);
+  padding: 35px;
+}
+
+.location-card p {
+  color: var(--muted);
+  font-size: 13px;
+  margin: 15px 0;
+}
+
+.hours-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  padding: 12px 0;
+  border-bottom: 1px solid #e2d9ce;
+  font-size: 12px;
+}
+
+.open-label {
+  color: #537b46;
+  font-weight: 700;
+}
+
+.final-cta {
+  background:
+    linear-gradient(rgba(28,20,15,.82), rgba(28,20,15,.82)),
+    url('https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=1600&q=80')
+    center/cover;
+  color: white;
+  text-align: center;
+  padding: 90px 0;
+}
+
+.final-cta .eyebrow {
+  color: #d8b983;
+}
+
+.final-cta .section-description {
+  color: #ddd0c3;
+  margin: 18px auto 28px;
+}
+
+footer {
+  background: #110e0c;
+  color: white;
+  padding: 55px 0 25px;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr;
+  gap: 45px;
+  padding-bottom: 35px;
+}
+
+footer .logo {
+  color: #e0c18e;
+}
+
+footer p {
+  color: #b7aaa0;
+  font-size: 12px;
+  margin-top: 16px;
+  max-width: 330px;
+}
+
+footer h4 {
+  font-size: 12px;
+  margin-bottom: 15px;
+  letter-spacing: 1px;
+}
+
+.footer-links a {
+  display: block;
+  font-size: 12px;
+  color: #c7b9ab;
+  margin: 9px 0;
+}
+
+.footer-links a:hover {
+  color: #e0c18e;
+}
+
+.footer-bottom {
+  border-top: 1px solid #392e26;
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  color: #a99b8e;
+  font-size: 10px;
+}
+
+.floating-whatsapp {
+  position: fixed;
+  z-index: 900;
+  right: 20px;
+  bottom: 20px;
+  width: 56px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #25d366;
+  color: white;
+  font-size: 25px;
+  border-radius: 50%;
+  box-shadow: 0 5px 20px #0003;
+  transition: .2s;
+}
+
+.floating-whatsapp:hover {
+  transform: scale(1.08);
+}
+
+@media(max-width: 900px) {
+  .nav-links {
+    gap: 15px;
+  }
+
+  .nav-links a {
+    font-size: 11px;
+  }
+
+  .about-grid {
+    gap: 35px;
+  }
+
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .booking-grid {
+    gap: 30px;
+  }
+
+  .gallery-grid {
+    grid-template-rows: 190px 190px;
+  }
+}
+
+@media(max-width: 680px) {
+  .section {
+    padding: 68px 0;
+  }
+
+  .topbar {
+    font-size: 9px;
+  }
+
+  .nav {
+    height: 72px;
+  }
+
+  .logo {
+    font-size: 21px;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 72px;
+    padding: 24px 5%;
+    background: var(--bg);
+    border-bottom: 1px solid #e0d5c7;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 19px;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-links a {
+    font-size: 13px;
+  }
+
+  .nav-links .btn {
+    text-align: center;
+  }
+
+  .hero {
+    min-height: 620px;
+  }
+
+  .hero::before {
+    background:
+      linear-gradient(90deg, rgba(20,15,12,.83), rgba(20,15,12,.43)),
+      url('https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=1000&q=80')
+      center/cover;
+  }
+
+  .hero-content {
+    padding: 75px 0;
+  }
+
+  .hero h1 {
+    font-size: 52px;
+  }
+
+  .hero p {
+    font-size: 13px;
+  }
+
+  .hero-note {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .trust-grid {
+    gap: 8px;
+  }
+
+  .trust-item strong {
+    font-size: 23px;
+  }
+
+  .trust-item span {
+    font-size: 9px;
+  }
+
+  .about-grid,
+  .booking-grid,
+  .location-grid {
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
+
+  .about-image img {
+    height: 380px;
+  }
+
+  .services-grid,
+  .reviews-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .service-card p {
+    min-height: auto;
+  }
+
+  .gallery-grid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 220px 170px 170px;
+    gap: 9px;
+  }
+
+  .gallery-grid a:first-child {
+    grid-column: span 2;
+    grid-row: auto;
+  }
+
+  .review-summary {
+    gap: 15px;
+  }
+
+  .booking-form {
+    padding: 23px 18px;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .map-frame {
+    height: 310px;
+  }
+
+  .location-card {
+    padding: 25px 20px;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 30px 20px;
+  }
+
+  .footer-grid > div:first-child {
+    grid-column: span 2;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+  }
+}
+
+@media(prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    scroll-behavior: auto !important;
+    transition: none !important;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<div class="topbar">
+  YOUR MOMENT OF BEAUTY & WELLNESS · RATANADA, JODHPUR
+</div>
+
+<header>
+  <div class="container nav">
+
+    <a href="#home" class="logo">
+      TAPASYA
+      <small>SPA & SALON</small>
+    </a>
+
+    <button class="menu-toggle" id="menuToggle"
+      aria-label="Open navigation menu"
+      aria-expanded="false">☰</button>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#contact" class="btn">Book Appointment ↗</a>
+    </nav>
+
+  </div>
+</header>
+
+<main>
+
+<!-- HERO -->
+
+<section class="hero" id="home">
+  <div class="container">
+    <div class="hero-content">
+
+      <div class="eyebrow">Beauty · Wellness · You</div>
+
+      <h1>
+        Discover Your<br>
+        <em>Beautiful Side.</em>
+      </h1>
+
+      <p>
+        Take a moment for yourself at Tapasya Spa & Salon.
+        Discover hair care, rejuvenating facials and relaxing
+        treatments in a welcoming beauty and wellness space
+        in Ratanada, Jodhpur.
+      </p>
+
+      <div class="hero-actions">
+        <a href="#contact" class="btn">Book Your Visit ↗</a>
+
+        <a href="#services" class="btn btn-outline">
+          Explore Services
+        </a>
+      </div>
+
+      <div class="hero-note">
+        <span>4.8 Google Rating</span>
+        <span>884 Google Reviews</span>
+        <span>Ratanada, Jodhpur</span>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- TRUST -->
+
+<section class="trust-strip">
+  <div class="container trust-grid">
+
+    <div class="trust-item">
+      <strong>4.8/5</strong>
+      <span>GOOGLE RATING</span>
+    </div>
+
+    <div class="trust-item">
+      <strong>884+</strong>
+      <span>GOOGLE REVIEWS</span>
+    </div>
+
+    <div class="trust-item">
+      <strong>Care</strong>
+      <span>YOUR BEAUTY, OUR PRIORITY</span>
+    </div>
+
+  </div>
+</section>
+
+<!-- ABOUT -->
+
+<section class="section" id="about">
+  <div class="container about-grid">
+
+    <div class="about-image">
+      <img
+        src="https://images.unsplash.com/photo-1600948836101-f9ffda59d250?auto=format&fit=crop&w=1000&q=85"
+        alt="Salon interior and beauty treatment space"
+        loading="lazy">
+
+      <div class="image-caption">
+        A little time<br>just for you.
+      </div>
+    </div>
+
+    <div class="about-copy">
+
+      <div class="eyebrow">Welcome to Tapasya</div>
+
+      <h2 class="section-title">
+        Your Beauty.<br>
+        Your Confidence.
+      </h2>
+
+      <p>
+        At Tapasya Spa & Salon, your time is about feeling
+        refreshed, cared for and confident. Whether you are
+        looking for a fresh hairstyle, a facial or a relaxing
+        spa experience, discover services tailored to your
+        beauty and wellness needs.
+      </p>
+
+      <p>
+        Located near Park Plaza Hotel in Ratanada, Jodhpur,
+        Tapasya is a convenient destination for your next
+        self-care appointment.
+      </p>
+
+      <div class="about-points">
+        <div class="about-point"><span>✦</span> Hair Care</div>
+        <div class="about-point"><span>✦</span> Skin Care</div>
+        <div class="about-point"><span>✦</span> Beauty Services</div>
+        <div class="about-point"><span>✦</span> Spa & Wellness</div>
+      </div>
+
+      <a href="#contact" class="btn">Plan Your Visit ↗</a>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- SERVICES -->
+
+<section class="section services" id="services">
+  <div class="container">
+
+    <div class="section-heading center">
+      <div class="eyebrow">Our Services</div>
+
+      <h2 class="section-title">
+        Your Self-Care Destination
+      </h2>
+
+      <p class="section-description">
+        Explore beauty and wellness services designed to help
+        you look and feel your best. Contact our team to confirm
+        availability, treatment details and pricing.
+      </p>
+    </div>
+
+    <div class="services-grid">
+
+      <article class="service-card">
+        <div class="service-number">01</div>
+        <h3>Hair Styling</h3>
+        <p>
+          Refresh your look with haircuts, styling and
+          hair care options suited to your preferences.
+        </p>
+        <a href="#contact" class="text-link"
+          data-service="Hair Styling">ENQUIRE NOW ↗</a>
+      </article>
+
+      <article class="service-card">
+        <div class="service-number">02</div>
+        <h3>Facial Treatments</h3>
+        <p>
+          Explore facial care options, including hydra facial
+          treatments, based on your skin care needs.
+        </p>
+        <a href="#contact" class="text-link"
+          data-service="Facial Treatments">ENQUIRE NOW ↗</a>
+      </article>
+
+      <article class="service-card">
+        <div class="service-number">03</div>
+        <h3>Hair Treatments</h3>
+        <p>
+          Discover hair treatments and styling services.
+          Ask our team about suitable options and availability.
+        </p>
+        <a href="#contact" class="text-link"
+          data-service="Hair Treatments">ENQUIRE NOW ↗</a>
+      </article>
+
+      <article class="service-card">
+        <div class="service-number">04</div>
+        <h3>Spa & Massage</h3>
+        <p>
+          Make time for relaxation with spa and massage
+          services. Contact us to explore available treatments.
+        </p>
+        <a href="#contact" class="text-link"
+          data-service="Spa & Massage">ENQUIRE NOW ↗</a>
+      </article>
+
+      <article class="service-card">
+        <div class="service-number">05</div>
+        <h3>Manicure & Pedicure</h3>
+        <p>
+          Give your hands and feet some attention with
+          grooming and nail care services.
+        </p>
+        <a href="#contact" class="text-link"
+          data-service="Manicure & Pedicure">ENQUIRE NOW ↗</a>
+      </article>
+
+      <article class="service-card">
+        <div class="service-number">06</div>
+        <h3>Beauty & Grooming</h3>
+        <p>
+          Explore beauty and personal grooming options
+          for your everyday look or special occasion.
+        </p>
+        <a href="#contact" class="text-link"
+          data-service="Beauty & Grooming">ENQUIRE NOW ↗</a>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+
+<section class="section" id="gallery">
+  <div class="container">
+
+    <div class="section-heading">
+      <div class="eyebrow">The Experience</div>
+
+      <h2 class="section-title">
+        A Glimpse Into Beauty
+      </h2>
+
+      <p class="section-description">
+        Discover the beauty and wellness experience.
+        Contact Tapasya for current services and availability.
+      </p>
+    </div>
+
+    <div class="gallery-grid">
+
+      <a href="#contact" aria-label="Enquire about salon services">
+        <img
+          src="https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=900&q=85"
+          alt="Beauty salon interior"
+          loading="lazy">
+      </a>
+
+      <a href="#contact" aria-label="Enquire about hair services">
+        <img
+          src="https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?auto=format&fit=crop&w=700&q=85"
+          alt="Hair salon styling station"
+          loading="lazy">
+      </a>
+
+      <a href="#contact" aria-label="Enquire about hair care">
+        <img
+          src="https://images.unsplash.com/photo-1562322140-8baeececf3df?auto=format&fit=crop&w=700&q=85"
+          alt="Hair styling and care"
+          loading="lazy">
+      </a>
+
+      <a href="#contact" aria-label="Enquire about beauty treatments">
+        <img
+          src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=700&q=85"
+          alt="Facial skin care treatment"
+          loading="lazy">
+      </a>
+
+      <a href="#contact" aria-label="Enquire about wellness">
+        <img
+          src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=700&q=85"
+          alt="Spa and wellness environment"
+          loading="lazy">
+      </a>
+
+    </div>
+
+    <p class="gallery-note">
+      Note: These are illustrative stock photographs, not verified
+      photographs of Tapasya Spa & Salon. Replace them with the
+      salon's actual photos before publishing.
+    </p>
+
+  </div>
+</section>
+
+<!-- REVIEWS -->
+
+<section class="section review-section" id="reviews">
+  <div class="container">
+
+    <div class="section-heading">
+      <div class="eyebrow">Client Feedback</div>
+
+      <h2 class="section-title">
+        Loved by Our Community
+      </h2>
+
+      <p class="section-description">
+        See what customers have shared about their experiences
+        at Tapasya Spa & Salon.
+      </p>
+    </div>
+
+    <div class="review-summary">
+
+      <div class="review-score">4.8</div>
+
+      <div>
+        <div class="stars">★★★★★</div>
+        <small>Google rating · 884 reviews</small>
+      </div>
+
+      <a
+        class="btn btn-outline"
+        href="https://www.google.com/maps/search/?api=1&query=Tapasya+Spa+And+Salon+Ratanada+Jodhpur"
+        target="_blank"
+        rel="noopener noreferrer">
+        Read Google Reviews ↗
+      </a>
+
+    </div>
+
+    <div class="reviews-grid">
+
+      <article class="review-card">
+        <div class="stars">★★★★★</div>
+
+        <p>
+          Customers have praised the welcoming staff and
+          professional service, highlighting positive salon
+          experiences and attentive care.
+        </p>
+
+        <strong>Customer Feedback</strong>
+        <small>Summary of public review themes</small>
+      </article>
+
+      <article class="review-card">
+        <div class="stars">★★★★★</div>
+
+        <p>
+          Public feedback mentions facial treatments, including
+          hydra facials, alongside a variety of hair and beauty
+          services.
+        </p>
+
+        <strong>Customer Feedback</strong>
+        <small>Summary of public review themes</small>
+      </article>
+
+      <article class="review-card">
+        <div class="stars">★★★★★</div>
+
+        <p>
+          Review summaries also highlight the salon's clean
+          environment, reasonable pricing and accommodating
+          appointment service.
+        </p>
+
+        <strong>Customer Feedback</strong>
+        <small>Summary of public review themes</small>
+      </article>
+
+    </div>
+
+    <p class="review-disclaimer">
+      These cards summarize the supplied Google Maps review information.
+      They are not verbatim customer testimonials. Visit Google Maps
+      to read individual reviews and verify the latest rating.
+    </p>
+
+  </div>
+</section>
+
+<!-- BOOKING -->
+
+<section class="section" id="contact">
+  <div class="container booking-grid">
+
+    <div class="booking-info">
+
+      <div class="eyebrow">Let's Connect</div>
+
+      <h2 class="section-title">
+        Your Next<br>Appointment Awaits.
+      </h2>
+
+      <p>
+        Ready for a little self-care? Share your preferred
+        service and appointment details. Your request will
+        open in WhatsApp so our team can assist you.
+      </p>
+
+      <div class="contact-item">
+        <small>Call or WhatsApp</small>
+        <strong>+91 80034 09999</strong>
+      </div>
+
+      <div class="contact-item">
+        <small>Visit Us</small>
+        <strong>Jeet Apartment, near Park Plaza Hotel,
+          Ratanada, Jodhpur, Rajasthan 342011</strong>
+      </div>
+
+      <div class="contact-item">
+        <small>Business Hours</small>
+        <strong>Daily · Please confirm current timings</strong>
+      </div>
+
+      <div class="contact-item">
+        <small>Google Maps</small>
+        <strong>
+          <a
+            href="https://www.google.com/maps/search/?api=1&query=Tapasya+Spa+And+Salon+Ratanada+Jodhpur"
+            target="_blank"
+            rel="noopener noreferrer">
+            Get Directions ↗
+          </a>
+        </strong>
+      </div>
+
+    </div>
+
+    <form class="booking-form" id="bookingForm">
+
+      <h3>Request an Appointment</h3>
+
+      <p class="form-description">
+        Fill in your details to send an appointment enquiry
+        through WhatsApp.
+      </p>
+
+      <div class="form-row">
+
+        <div class="field">
+          <label for="customerName">Your Name *</label>
+          <input
+            id="customerName"
+            name="customerName"
+            type="text"
+            placeholder="Enter your name"
+            autocomplete="name"
+            required>
+        </div>
+
+        <div class="field">
+          <label for="customerPhone">Your Phone *</label>
+          <input
+            id="customerPhone"
+            name="customerPhone"
+            type="tel"
+            placeholder="Your contact number"
+            autocomplete="tel"
+            required>
+        </div>
+
+      </div>
+
+      <div class="field">
+        <label for="service">Choose a Service *</label>
+
+        <select id="service" name="service" required>
+          <option value="">Select a service</option>
+          <option>Hair Styling</option>
+          <option>Facial Treatments</option>
+          <option>Hair Treatments</option>
+          <option>Spa & Massage</option>
+          <option>Manicure & Pedicure</option>
+          <option>Beauty & Grooming</option>
+          <option>Other Enquiry</option>
+        </select>
+      </div>
+
+      <div class="form-row">
+
+        <div class="field">
+          <label for="date">Preferred Date *</label>
+          <input
+            id="date"
+            name="date"
+            type="date"
+            required>
+        </div>
+
+        <div class="field">
+          <label for="time">Preferred Time</label>
+
+          <select id="time" name="time">
+            <option value="Flexible">Flexible</option>
+            <option>10:00 AM – 12:00 PM</option>
+            <option>12:00 PM – 2:00 PM</option>
+            <option>2:00 PM – 4:00 PM</option>
+            <option>4:00 PM – 6:00 PM</option>
+            <option>6:00 PM – 8:00 PM</option>
+            <option>8:00 PM – 9:00 PM</option>
+          </select>
+        </div>
+
+      </div>
+
+      <div class="field">
+        <label for="message">Additional Details</label>
+
+        <textarea
+          id="message"
+          name="message"
+          placeholder="Tell us if you have any special requests..."></textarea>
+      </div>
+
+      <button class="btn" type="submit">
+        Send Appointment Request on WhatsApp ↗
+      </button>
+
+      <p class="form-message">
+        Your WhatsApp app will open with your enquiry.
+        Your appointment is not confirmed until the salon responds.
+      </p>
+
+    </form>
+
+  </div>
+</section>
+
+<!-- LOCATION -->
+
+<section class="section location" id="location">
+  <div class="container location-grid">
+
+    <div>
+      <div class="eyebrow">Find Us</div>
+
+      <h2 class="section-title">
+        Visit Tapasya<br>in Jodhpur.
+      </h2>
+
+      <p class="section-description">
+        Find us in Ratanada, near Park Plaza Hotel.
+        Use Google Maps to check the route before visiting.
+      </p>
+
+      <div style="margin-top:25px">
+        <a
+          class="btn"
+          href="https://www.google.com/maps/dir/?api=1&destination=Tapasya+Spa+And+Salon+Ratanada+Jodhpur"
+          target="_blank"
+          rel="noopener noreferrer">
+          Get Directions ↗
+        </a>
+      </div>
+
+    </div>
+
+    <div>
+      <iframe
+        class="map-frame"
+        title="Map showing Tapasya Spa and Salon in Ratanada, Jodhpur"
+        src="https://maps.google.com/maps?q=Tapasya%20Spa%20And%20Salon%20Ratanada%20Jodhpur&t=&z=15&ie=UTF8&iwloc=&output=embed"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        allowfullscreen>
+      </iframe>
+    </div>
+
+  </div>
+</section>
+
+<!-- CTA -->
+
+<section class="final-cta">
+  <div class="container">
+
+    <div class="eyebrow">Make Time for Yourself</div>
+
+    <h2 class="section-title">
+      Your Beauty Deserves<br>a Little Extra Care.
+    </h2>
+
+    <p class="section-description">
+      Connect with Tapasya Spa & Salon to explore services
+      and request your next appointment.
+    </p>
+
+    <a href="#contact" class="btn">Book Your Appointment ↗</a>
+
+  </div>
+</section>
+
+</main>
+
+<!-- FOOTER -->
+
+<footer>
+  <div class="container">
+
+    <div class="footer-grid">
+
+      <div>
+        <a href="#home" class="logo">
+          TAPASYA
+          <small>SPA & SALON</small>
+        </a>
+
+        <p>
+          Beauty, self-care and wellness in Ratanada, Jodhpur.
+          Contact us to explore our services and plan your visit.
+        </p>
+      </div>
+
+      <div class="footer-links">
+        <h4>EXPLORE</h4>
+        <a href="#about">About Us</a>
+        <a href="#services">Our Services</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#reviews">Customer Reviews</a>
+      </div>
+
+      <div class="footer-links">
+        <h4>GET IN TOUCH</h4>
+
+        <a href="tel:+918003409999">Call Us</a>
+
+        <a
+          href="https://wa.me/918003409999"
+          target="_blank"
+          rel="noopener noreferrer">
+          WhatsApp Us
+        </a>
+
+        <a href="#location">Our Location</a>
+
+        <a
+          href="https://www.google.com/maps/search/?api=1&query=Tapasya+Spa+And+Salon+Ratanada+Jodhpur"
+          target="_blank"
+          rel="noopener noreferrer">
+          Google Maps ↗
+        </a>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <span>
+        © <span id="year"></span> Tapasya Spa & Salon.
+        All rights reserved.
+      </span>
+
+      <span>Made for beauty, care & confidence.</span>
+    </div>
+
+  </div>
+</footer>
+
+<!-- FLOATING WHATSAPP -->
+
+<a
+  class="floating-whatsapp"
+  href="https://wa.me/918003409999?text=Hello%20Tapasya%20Spa%20%26%20Salon%2C%20I%20would%20like%20to%20enquire%20about%20your%20services."
+  target="_blank"
+  rel="noopener noreferrer"
+  aria-label="Contact Tapasya Spa and Salon on WhatsApp">
+  ✆
+</a>
+
+<script>
+(function () {
+  "use strict";
+
+  const WHATSAPP_NUMBER = "918003409999";
+
+  // Mobile navigation
+  const menuToggle = document.getElementById("menuToggle");
+  const navLinks = document.getElementById("navLinks");
+
+  menuToggle.addEventListener("click", function () {
+    const isOpen = navLinks.classList.toggle("active");
+
+    menuToggle.setAttribute("aria-expanded", String(isOpen));
+    menuToggle.textContent = isOpen ? "✕" : "☰";
+  });
+
+  navLinks.querySelectorAll("a").forEach(function (link) {
+    link.addEventListener("click", function () {
+      navLinks.classList.remove("active");
+      menuToggle.setAttribute("aria-expanded", "false");
+      menuToggle.textContent = "☰";
+    });
+  });
+
+  // Current year
+  document.getElementById("year").textContent =
+    new Date().getFullYear();
+
+  // Prevent selecting a past appointment date
+  const dateInput = document.getElementById("date");
+  const today = new Date();
+  const localToday = [
+    today.getFullYear(),
+    String(today.getMonth() + 1).padStart(2, "0"),
+    String(today.getDate()).padStart(2, "0")
+  ].join("-");
+
+  dateInput.min = localToday;
+
+  // Service enquiry shortcuts
+  document.querySelectorAll("[data-service]").forEach(function (link) {
+    link.addEventListener("click", function () {
+      document.getElementById("service").value =
+        link.getAttribute("data-service");
+    });
+  });
+
+  // Appointment request via WhatsApp
+  document.getElementById("bookingForm").addEventListener(
+    "submit",
+    function (event) {
+      event.preventDefault();
+
+      const name =
+        document.getElementById("customerName").value.trim();
+
+      const phone =
+        document.getElementById("customerPhone").value.trim();
+
+      const service =
+        document.getElementById("service").value;
+
+      const date =
+        document.getElementById("date").value;
+
+      const time =
+        document.getElementById("time").value;
+
+      const message =
+        document.getElementById("message").value.trim();
+
+      if (!name || !phone || !service || !date) {
+        alert("Please fill in all required fields.");
+        return;
+      }
+
+      const digits = phone.replace(/\D/g, "");
+
+      if (digits.length < 7 || digits.length > 15) {
+        alert("Please enter a valid contact number.");
+        return;
+      }
+
+      if (date < localToday) {
+        alert("Please choose today or a future date.");
+        return;
+      }
+
+      const text = [
+        "Hello Tapasya Spa & Salon!",
+        "",
+        "I would like to request an appointment.",
+        "",
+        "Name: " + name,
+        "Contact Number: " + phone,
+        "Service: " + service,
+        "Preferred Date: " + date,
+        "Preferred Time: " + time,
+        "Additional Details: " + (message || "None"),
+        "",
+        "Please confirm availability. Thank you!"
+      ].join("\n");
+
+      const whatsappURL =
+        "https://wa.me/" + WHATSAPP_NUMBER +
+        "?text=" + encodeURIComponent(text);
+
+      window.open(whatsappURL, "_blank", "noopener,noreferrer");
+    }
+  );
+
+})();
+</script>
+
+</body>
+</html>
+```
